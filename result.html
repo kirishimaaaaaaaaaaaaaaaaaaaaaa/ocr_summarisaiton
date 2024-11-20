@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OCR Project</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&family=Raleway:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #1a1a1a;
+            color: #FFB6C1;
+            text-align: center;
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            font-family: 'Raleway', sans-serif;
+            font-size: 2.5em;
+            color: #FF69B4;
+            margin: 20px 0;
+        }
+
+        .result-section {
+            background-color: #333;
+            padding: 30px;
+            border-radius: 15px;
+            display: inline-block;
+            width: 80%;
+            max-width: 600px;
+            margin: 20px auto;
+            box-shadow: 0px 4px 12px rgba(255, 105, 180, 0.5);
+        }
+
+        p {
+            font-size: 1.1em;
+            color: #FFB6C1;
+            margin: 10px 0;
+        }
+
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 24px;
+            background-color: #FF69B4;
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+            font-family: 'Raleway', sans-serif;
+            border-radius: 5px;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        a:hover {
+            background-color: #FF1493;
+            transform: scale(1.05);
+        }
+
+        img {
+            border-radius: 8px;
+            margin: 15px;
+            box-shadow: 0px 4px 8px rgba(255, 105, 180, 0.4);
+        }
+    </style>
+</head>
+<body>
+    <h1>Text Summary Result</h1>
+    <div class="result-section">
+        <p><strong>EXTRACTED TEXT:</strong></p>
+        <p>{{ text_in_image }}</p>
+        <p><strong>EXTRACTED SUMMARY:</strong></p>
+        <p>{{ text_summary }}</p>
+        <a href="/">UPLOAD ANOTHER IMAGE</a>
+    </div>
+    <img src="https://i.pinimg.com/736x/11/39/6c/11396c48bc08ca9bd5d94aef2ffabc68.jpg" alt="image" height="500" width="300" style="border: 2px solid black"; >
+    <p>HOPE YOU LIKE IT</p>
+</body>
+</html>
